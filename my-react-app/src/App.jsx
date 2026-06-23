@@ -10,9 +10,10 @@ function App(){
     
 
     {/*using the Header component */}
-    <Header />
+    <Header  name = "Isha" age = {20} />
+    
 
-    <p> I am learning React</p>
+  
     
   </div>
   );
