@@ -1,21 +1,43 @@
 // importing component from Header.jsx
-import Header  from "./Header";
+// import Header  from "./Header";
 
-// creating app component 
-function App(){
+// // creating app component 
+// function App(){
+  
 
-  // display content
-  return(
-  <div>
+//   // display content
+//   return(
+//   <div>
     
 
-    {/*using the Header component */}
-    <Header  name = "Isha" age = {20} />
+//     {/*using the Header component */}
+//     <Header  name = "Isha" age = {20} />
     
 
   
     
-  </div>
+//   </div>
+//   );
+// }
+// export default App;
+
+
+
+
+
+function App(){
+
+  function Hello(){
+    alert("hello isha");
+  }
+
+  return(
+    <div>
+      <button onClick={Hello}>
+         Click Me
+      </button>
+    </div>
   );
 }
+
 export default App;

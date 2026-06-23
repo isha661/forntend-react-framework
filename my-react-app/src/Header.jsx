@@ -1,5 +1,6 @@
 // Creating a component named Header
-
+// normal props runction header(propes)
+// this is destrucuring props passing with {}
 function Header({name,age}){
     
     // return tells react what to display on the screen
