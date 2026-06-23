@@ -1,5 +1,3 @@
-# forntend-react-framework
-
 # Frontend React Framework
 
 This repository contains my React learning journey.
@@ -16,4 +14,7 @@ This repository contains my React learning journey.
 ## Author
 
 Isha Rai
+<<<<<<< HEAD
 
+=======
+>>>>>>> b51b5d4e3ef0eb7e405fb922a6c5de201d9984ed
