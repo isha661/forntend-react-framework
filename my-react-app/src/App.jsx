@@ -67,17 +67,38 @@
 
 
 // Getting the typed value 
+
+// function App(){
+// function typing(event){
+//   console.log(event.target.value);
+// }
+
+//   return(
+//     <div>
+//       <input type="text" onChange={typing}/>
+//     </div>
+//   );
+
+// }
+// export default App;
+
+
+
+
+// Event handeling : onSubmit 
 function App(){
-function typing(event){
-  console.log(event.target.value);
-}
+  function submit(){
+    alert("Form submitted isha ");
+  }
 
   return(
-    <div>
-      <input type="text" onChange={typing}/>
-    </div>
+   
+    <form onSubmit = {submit}> 
+    <button> Submit </button>
+    </form>
+    
+  
   );
-
 }
 export default App;
 
