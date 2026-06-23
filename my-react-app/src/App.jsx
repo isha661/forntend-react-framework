@@ -25,19 +25,59 @@
 
 
 
-function App(){
+// function App(){
 
-  function Hello(){
-    alert("hello isha");
-  }
+//   function Hello(){
+//     alert("hello isha");
+//     alert("This is event handeling onClick method")
+//   }
+
+//   return(
+//     <div>
+//       <button onClick={Hello}>
+//          Click Me
+//       </button>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+// Event handeling : onClick
+// run when the value of an input changes
+
+// function App(){
+// function typing(){
+//   console.log("user is typing");
+// }
+
+//   return(
+//     <div>
+//       <input type="text" onChange={typing}/>
+//     </div>
+//   );
+
+// }
+// export default App;
+
+
+
+// Getting the typed value 
+function App(){
+function typing(event){
+  console.log(event.target.value);
+}
 
   return(
     <div>
-      <button onClick={Hello}>
-         Click Me
-      </button>
+      <input type="text" onChange={typing}/>
     </div>
   );
-}
 
+}
 export default App;
+
