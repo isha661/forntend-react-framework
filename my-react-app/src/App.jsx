@@ -104,15 +104,35 @@
 // }
 // export default App;
 
+
+
+
 // Event handeling : onMouseOver
+
+// function App(){
+//   function message(){
+//     alert("Mouse is here");
+//   }
+
+//   return(
+//     <h1 onMouseOver ={message}> put mouse here </h1> 
+//   );
+// }
+// export default App;
+
+
+
+// onMouseOut
+
 function App(){
-  function message(){
-    alert("Mouse is here");
+  function bye(){
+    alert("byeee");
   }
 
   return(
-    <h1 onMouseOver ={message}> put mouse here </h1> 
+
+    <h1 onMouseOut = {bye}> hover here</h1>
   );
 }
-export default App;
 
+export default App;
