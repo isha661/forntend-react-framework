@@ -141,15 +141,48 @@
 
 // onDoubleClick
 
+// function App(){
+//   function double(){
+//     alert("hello you clicked double ig");
+//   }
+
+//   return(
+
+//     <button onDoubleClick={double}> here double click</button>
+//   );
+// }
+
+// export default App;
+
+
+
+
+// Importing useState hook from React
+//
+import { useState } from "react";
+
 function App(){
-  function double(){
-    console.log("hello you clicked double ig");
+
+  const [count, setCount] = useState(0);
+  // count= current value, setCount = function to change count
+
+
+  function increase(){
+    setCount(count +1);
+    // update the count value and new count become 1
+  
   }
+
 
   return(
 
-    <button onDoubleClick={double}> here double click</button>
+    <div>
+
+      {/* {count} = show the js varaible count here*/}
+      <h1>{count}</h1>
+      <button onClick={increase}> add </button>
+
+    </div>
   );
 }
-
 export default App;
