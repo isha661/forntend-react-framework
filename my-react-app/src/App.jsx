@@ -86,18 +86,32 @@
 
 
 // Event handeling : onSubmit 
+
+// function App(){
+//   function submit(){
+//     event.preventDefault(); // form refresh the page by default 
+//     alert("Form submitted isha ");
+//   }
+
+//   return(
+   
+//     <form onSubmit = {submit}> 
+//     <button> Submit </button>
+//     </form>
+    
+  
+//   );
+// }
+// export default App;
+
+// Event handeling : onMouseOver
 function App(){
-  function submit(){
-    alert("Form submitted isha ");
+  function message(){
+    alert("Mouse is here");
   }
 
   return(
-   
-    <form onSubmit = {submit}> 
-    <button> Submit </button>
-    </form>
-    
-  
+    <h1 onMouseOver ={message}> put mouse here </h1> 
   );
 }
 export default App;
