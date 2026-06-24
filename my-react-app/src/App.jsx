@@ -124,14 +124,31 @@
 
 // onMouseOut
 
+// function App(){
+//   function bye(){
+//     alert("byeee");
+//   }
+
+//   return(
+
+//     <h1 onMouseOut = {bye}> hover here</h1>
+//   );
+// }
+
+// export default App;
+
+
+
+// onDoubleClick
+
 function App(){
-  function bye(){
-    alert("byeee");
+  function double(){
+    console.log("hello you clicked double ig");
   }
 
   return(
 
-    <h1 onMouseOut = {bye}> hover here</h1>
+    <button onDoubleClick={double}> here double click</button>
   );
 }
 
