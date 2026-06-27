@@ -159,30 +159,33 @@
 
 // Importing useState hook from React
 //
-import { useState } from "react";
+// import { useState } from "react";
 
-function App(){
+// function App(){
+//         // state  ,setSate
+//   const [count, setCount] = useState(0);
+//   // count= current value, setCount = function to change count
+//   // array destructuring
 
-  const [count, setCount] = useState(0);
-  // count= current value, setCount = function to change count
-
-
-  function increase(){
-    setCount(count +1);
-    // update the count value and new count become 1
+//   function increase(){
+//     setCount(count +1);
+//     // update the count value and new count become 1
   
-  }
+//   }
+//   function decrease(){
+//     setCount(count -1);
+//   }
 
+//   return(
 
-  return(
+//     <div>
 
-    <div>
+//       {/* {count} = show the js varaible count here*/}
+//       <h1>{count}</h1>
+//       <button onClick={increase}> add </button>
+//       <button onClick={decrease}> minus</button>
 
-      {/* {count} = show the js varaible count here*/}
-      <h1>{count}</h1>
-      <button onClick={increase}> add </button>
-
-    </div>
-  );
-}
-export default App;
+//     </div>
+//   );
+// }
+// export default App;
