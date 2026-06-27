@@ -47,6 +47,34 @@ import { useState } from "react";
 
 
 // Multiple input
+
+// THis is with arrow function
+// function State() {
+//   const [name, setName] = useState("");
+//   const [age, setAge] = useState("");
+//   return (
+
+//     <div>
+
+//       <input type="text"
+//        placeholder="Name" onChange={(e) => setName(e.target.value)}
+
+//       />
+//       <br />
+
+//        <input type="number"
+//          placeholder="Age" onChange={(e) => setAge(e.target.value)} />
+
+//        <br></br>
+
+//       <h2> {name} is {age} years old </h2>
+//     </div>
+//   );
+// }
+// export default State;
+
+
+
 function State(){
     const [name ,setName] = useState("");
     const [age, setAge] = useState("");
