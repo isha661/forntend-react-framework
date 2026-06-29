@@ -50,142 +50,140 @@
 // Event handeling : onClick
 // run when the value of an input changes
 
-// function App(){
-// function typing(){
-//   console.log("user is typing");
-// }
+function App(){
+function typing(){
+  console.log("user is typing");
+}
 
-//   return(
-//     <div>
-//       <input type="text" onChange={typing}/>
-//     </div>
-//   );
+  return(
+    <div>
+      <input type="text" onChange={typing}/>
+    </div>
+  );
 
-// }
-// export default App;
+}
+export default App;
 
 
 
 // Getting the typed value 
+function App(){
+function typing(event){
+  console.log(event.target.value);
+}
 
-// function App(){
-// function typing(event){
-//   console.log(event.target.value);
-// }
+  return(
+    <div>
+      <input type="text" onChange={typing}/>
+    </div>
+  );
 
-//   return(
-//     <div>
-//       <input type="text" onChange={typing}/>
-//     </div>
-//   );
-
-// }
-// export default App;
+}
+export default App;
 
 
 
 
 // Event handeling : onSubmit 
+function App(){
+  function submit(){
+    event.preventDefault(); // form refresh the page by default 
+    alert("Form submitted isha ");
+  }
 
-// function App(){
-//   function submit(){
-//     event.preventDefault(); // form refresh the page by default 
-//     alert("Form submitted isha ");
-//   }
-
-//   return(
+  return(
    
-//     <form onSubmit = {submit}> 
-//     <button> Submit </button>
-//     </form>
+    <form onSubmit = {submit}> 
+    <button> Submit </button>
+    </form>
     
   
-//   );
-// }
-// export default App;
+  );
+}
+export default App;
 
 
 
 
 // Event handeling : onMouseOver
+function App(){
+  function message(){
+    alert("Mouse is here");
+  }
 
-// function App(){
-//   function message(){
-//     alert("Mouse is here");
-//   }
-
-//   return(
-//     <h1 onMouseOver ={message}> put mouse here </h1> 
-//   );
-// }
-// export default App;
+  return(
+    <h1 onMouseOver ={message}> put mouse here </h1> 
+  );
+}
+export default App;
 
 
 
 // onMouseOut
+function App(){
+  function bye(){
+    alert("byeee");
+  }
 
-// function App(){
-//   function bye(){
-//     alert("byeee");
-//   }
+  return(
 
-//   return(
+    <h1 onMouseOut = {bye}> hover here</h1>
+  );
+}
 
-//     <h1 onMouseOut = {bye}> hover here</h1>
-//   );
-// }
+export default App;
 
-// export default App;
+
 
 
 
 // onDoubleClick
 
-// function App(){
-//   function double(){
-//     alert("hello you clicked double ig");
-//   }
+function App(){
+  function double(){
+    alert("hello you clicked double ig");
+  }
 
-//   return(
+  return(
 
-//     <button onDoubleClick={double}> here double click</button>
-//   );
-// }
+    <button onDoubleClick={double}> here double click</button>
+  );
+}
 
-// export default App;
+export default App;
 
 
 
 
 // Importing useState hook from React
 //
-// import { useState } from "react";
+import { useState } from "react";
 
-// function App(){
-//         // state  ,setSate
-//   const [count, setCount] = useState(0);
-//   // count= current value, setCount = function to change count
-//   // array destructuring
+function App(){
+        // state  ,setSate
+  const [count, setCount] = useState(0);
+  // count= current value, setCount = function to change count
+  // array destructuring
 
-//   function increase(){
-//     setCount(count +1);
-//     // update the count value and new count become 1
+  function increase(){
+    setCount(count +1);
+    // update the count value and new count become 1
   
-//   }
-//   function decrease(){
-//     setCount(count -1);
-//   }
+  }
+  function decrease(){
+    setCount(count -1);
+  }
 
-//   return(
+  return(
 
-//     <div>
+    <div>
 
-//       {/* {count} = show the js varaible count here*/}
-//       <h1>{count}</h1>
-//       <button onClick={increase}> add </button>
-//       <button onClick={decrease}> minus</button>
+      {/* {count} = show the js varaible count here*/}
+      <h1>{count}</h1>
+      <button onClick={increase}> add </button>
+      <button onClick={decrease}> minus</button>
 
-//     </div>
-//   );
-// }
-// export default App;
+    </div>
+  );
+}
+export default App;

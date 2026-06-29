@@ -15,26 +15,49 @@
 // }
 // export default Food;
 
+
+
+
+// example with array with obj using map
+// function Food(){
+//     // array of  student object
+//     const students = [{name:"Isha", age: 20}
+//         ,{name:"Dibya", age: 21}
+//         ,{name:"ismini", age: 18}
+//     ];
+
+
+//     return (
+//         <div>
+
+//             {/* arrow function */}
+
+//             {students.map((student, index) => (
+//                 <div key={index}>
+//                     <h2>{`${student.name} is ${student.age} years old`}</h2>
+//                 </div>
+
+//             ))}
+//         </div>
+//     );
+// }
+// export default Food ;
+
+
+
+
+//practice
 function Food(){
-    // array of  student object
-    const students = [{name:"Isha", age: 20}
-        ,{name:"Dibya", age: 21}
-        ,{name:"ismini", age: 18}
-    ];
+    const games = ["footabll", "cricket", "chess"];
 
-
-    return (
+    return(
         <div>
-
-            {/* arrow function */}
-
-            {students.map((student, index) => (
-                <div key={index}>
-                    <h2>{`${student.name} is ${student.age} years old`}</h2>
-                </div>
-
+            {games.map((game, index) =>(
+                <h1 key={index}>{game}</h1>
             ))}
+            
+
         </div>
     );
 }
-export default Food ;
+export default Food;
