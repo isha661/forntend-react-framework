@@ -1,16 +1,40 @@
 // learning list and map
 
 
-function Food(){
-    const fruit = ["Apple", "banana", "orange"];
+// function Food(){
+//     const fruits = ["Apple", "banana", "orange"];
 
-    return(
+//     return(
+//         <div>
+//             {fruits.map((fruit, index) => 
+//                 (
+//                     <h1 key ={index}> {fruit} </h1>
+//                 ))}
+//         </div>
+//     );
+// }
+// export default Food;
+
+function Food(){
+    // array of  student object
+    const students = [{name:"Isha", age: 20}
+        ,{name:"Dibya", age: 21}
+        ,{name:"ismini", age: 18}
+    ];
+
+
+    return (
         <div>
-            {fruit.map((fruit) => 
-                (
-                    <h1>{fruit}</h1>
-                ))}
+
+            {/* arrow function */}
+
+            {students.map((student, index) => (
+                <div key={index}>
+                    <h2>{`${student.name} is ${student.age} years old`}</h2>
+                </div>
+
+            ))}
         </div>
     );
 }
-export default Food;
+export default Food ;
